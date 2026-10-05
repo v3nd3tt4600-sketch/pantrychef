@@ -1,0 +1,29 @@
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem 1rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+
+.category-card__image {
+  width: 100%;
+  max-width: 130px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.category-card__name {
+  font-weight: 700;
+  color: var(--color-text);
+}
